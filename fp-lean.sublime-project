@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{ "path": "examples", }, // HACK to make lsp work by setting root_uri
+		{ "path": "functional-programming-lean", },
+		{ "path": ".", }
+  ],
+  "settings": {
+  	"LSP": {
+      "lean": {
+        "enabled": true,
+        "command": ["lean",  "--server"],
+        "selector": "source.lean",
+        "env": {
+        	// "LEAN_SERVER_LOG_DIR": "lsp-logs"
+        },
+      },
+    },
+  },
+}
